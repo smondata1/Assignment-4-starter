@@ -1,0 +1,41 @@
+{
+  "name": "assignment-01-sample-soln",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "babel": "npx babel js/src/ --out-dir js/dist/ --ignore \"js/src/**/*.handlebars\"",
+    "watch": "npx babel js/src/ --out-dir js/dist/ --ignore \"js/src/**/*.handlebars\" --watch",
+    "test": "npx mocha -r esm",
+    "build": "npm run babel"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "@babel/preset-react": "^7.6.3",
+    "babel-plugin-iife-wrap": "^1.1.0",
+    "chai": "^4.2.0",
+    "chai-as-promised": "^7.1.1",
+    "esm": "^3.2.25",
+    "fetch-mock": "^7.5.1",
+    "mocha": "^6.2.2",
+    "node-fetch": "^2.6.0",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "modules": false
+        }
+      ],
+      ["@babel/preset-react"]
+    ]
+  }
+}
