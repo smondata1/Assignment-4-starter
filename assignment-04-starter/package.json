@@ -22,7 +22,7 @@
     "chai-as-promised": "^7.1.1",
     "esm": "^3.2.25",
     "fetch-mock": "^7.5.1",
-    "mocha": "^6.2.2",
+    "mocha": "^10.2.0",
     "node-fetch": "^2.6.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0"
